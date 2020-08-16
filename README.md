@@ -1,8 +1,7 @@
-# Riscos e Recomendações
-
-
-## Risks-and-Recommendations
+# Risks-and-Recommendations
 Programs to read risks and recommendations produced by the Regente platform and create roadmap spreadsheet with scores and frequencies.
+
+# Riscos e Recomendações
 
 ## Riscos
 
@@ -49,4 +48,3 @@ Programa que testa as 2 funções AchaSemelhante e TrocaFrase, a serem usadas no
 1. Os programas ainda têm os print() diversos usados para debug
 2. Copiado do diretorio de trabalho dt, antigo diretorio rr
 3. myApp: tutorial NetCore
-

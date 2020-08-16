@@ -63,3 +63,31 @@ Fast-forward
  create mode 100644 README.md
 gcoen@Gu1:~/rr$ 
 gcoen@Gu1:~/rr$ 
+
+Nova pasta, em 16/8/2020: 
+-------------------------
+copiei o diretorio Lerecom ao diretorio RiscosRecomend
+Apaguei .git
+Criei o repo Github Risks-Recommendations
+	git init
+	git add .
+	git commit -m "first revised version"
+		[master (root-commit) b7e7c19] first revised version
+		 316 files changed, 911982 insertions(+)
+		 create mode 100755 README.md
+		 create mode 100755 Roteiros e Referencias/.directory
+	git remote add origin https://github.com/gcoen/Risks-Recommendations.git
+	git push -u origin master
+		Username for 'https://github.com': gcoen
+		Password for 'https://gcoen@github.com': 
+		Counting objects: 425, done.
+		Delta compression using up to 4 threads.
+		Compressing objects: 100% (400/400), done.
+		Writing objects: 100% (425/425), 5.22 MiB | 1.46 MiB/s, done.
+		Total 425 (delta 120), reused 0 (delta 0)
+		remote: Resolving deltas: 100% (120/120), done.
+		To https://github.com/gcoen/Risks-Recommendations.git
+		 * [new branch]      master -> master
+		Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+
