@@ -1,0 +1,254 @@
+Instalar node, npm...
+---------------------
+gcoen@Gu1:~$ cd nd
+gcoen@Gu1:~/nd$ sudo pat update
+[sudo] password for gcoen: 
+gcoen@Gu1:~/nd$ sudo apt update
+[sudo] password for gcoen: 
+Hit:1 http://br.archive.ubuntu.com/ubuntu bionic InRelease
+Get:2 http://br.archive.ubuntu.com/ubuntu bionic-updates InRelease [88,7 kB]   
+Hit:3 https://download.docker.com/linux/ubuntu bionic InRelease                
+Ign:4 http://dl.google.com/linux/chrome/deb stable InRelease                   
+Hit:5 https://brave-browser-apt-release.s3.brave.com stable InRelease          
+Hit:6 https://deb.nodesource.com/node_10.x bionic InRelease                    
+Get:7 http://br.archive.ubuntu.com/ubuntu bionic-backports InRelease [74,6 kB] 
+Hit:8 http://dl.google.com/linux/chrome/deb stable Release                     
+Hit:9 https://download.sublimetext.com apt/stable/ InRelease                   
+Hit:10 http://security.ubuntu.com/ubuntu bionic-security InRelease             
+Hit:11 https://packages.microsoft.com/repos/ms-teams stable InRelease
+Fetched 163 kB in 3s (59,9 kB/s)                   
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+8 packages can be upgraded. Run 'apt list --upgradable' to see them.
+gcoen@Gu1:~/nd$ sudo apt install nodejs
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+nodejs is already the newest version (10.20.1-1nodesource1).
+0 upgraded, 0 newly installed, 0 to remove and 8 not upgraded.
+gcoen@Gu1:~/nd$ nodejs --version
+v10.20.1
+gcoen@Gu1:~/nd$ npm --version
+6.14.4
+gcoen@Gu1:~/nd$ sudo apt install build-essential
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+build-essential is already the newest version (12.4ubuntu1).
+build-essential set to manually installed.
+0 upgraded, 0 newly installed, 0 to remove and 8 not upgraded.
+gcoen@Gu1:~/nd$ sudo apt-get update
+Hit:1 https://deb.nodesource.com/node_10.x bionic InRelease
+Hit:2 https://download.docker.com/linux/ubuntu bionic InRelease                
+Hit:3 http://br.archive.ubuntu.com/ubuntu bionic InRelease                     
+Hit:4 https://brave-browser-apt-release.s3.brave.com stable InRelease          
+Get:5 http://br.archive.ubuntu.com/ubuntu bionic-updates InRelease [88,7 kB]   
+Ign:6 http://dl.google.com/linux/chrome/deb stable InRelease                   
+Get:7 http://br.archive.ubuntu.com/ubuntu bionic-backports InRelease [74,6 kB] 
+Hit:8 http://security.ubuntu.com/ubuntu bionic-security InRelease              
+Hit:9 http://dl.google.com/linux/chrome/deb stable Release                     
+Hit:10 https://packages.microsoft.com/repos/ms-teams stable InRelease          
+Hit:11 https://download.sublimetext.com apt/stable/ InRelease                  
+Fetched 163 kB in 1s (134 kB/s)                    
+Reading package lists... Done
+gcoen@Gu1:~/nd$ sudo apt-get install mysql-server
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following additional packages will be installed:
+  libaio1 libevent-core-2.1-6 libhtml-template-perl mysql-client-5.7
+  mysql-client-core-5.7 mysql-common mysql-server-5.7 mysql-server-core-5.7
+Suggested packages:
+  libipc-sharedcache-perl mailx tinyca
+The following NEW packages will be installed:
+  libaio1 libevent-core-2.1-6 libhtml-template-perl mysql-client-5.7
+  mysql-client-core-5.7 mysql-common mysql-server mysql-server-5.7
+  mysql-server-core-5.7
+0 upgraded, 9 newly installed, 0 to remove and 8 not upgraded.
+Need to get 19,1 MB of archives.
+After this operation, 155 MB of additional disk space will be used.
+Do you want to continue? [Y/n] 
+Get:1 http://br.archive.ubuntu.com/ubuntu bionic/main amd64 mysql-common all 5.8+1.0.4 [7.308 B]
+Get:2 http://br.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libaio1 amd64 0.3.110-5ubuntu0.1 [6.476 B]
+Get:3 http://br.archive.ubuntu.com/ubuntu bionic-updates/main amd64 mysql-client-core-5.7 amd64 5.7.30-0ubuntu0.18.04.1 [6.649 kB]
+Get:4 http://br.archive.ubuntu.com/ubuntu bionic-updates/main amd64 mysql-client-5.7 amd64 5.7.30-0ubuntu0.18.04.1 [1.945 kB]
+Get:5 http://br.archive.ubuntu.com/ubuntu bionic-updates/main amd64 mysql-server-core-5.7 amd64 5.7.30-0ubuntu0.18.04.1 [7.437 kB]
+Get:6 http://br.archive.ubuntu.com/ubuntu bionic/main amd64 libevent-core-2.1-6 amd64 2.1.8-stable-4build1 [85,9 kB]
+Get:7 http://br.archive.ubuntu.com/ubuntu bionic-updates/main amd64 mysql-server-5.7 amd64 5.7.30-0ubuntu0.18.04.1 [2.929 kB]
+Get:8 http://br.archive.ubuntu.com/ubuntu bionic/main amd64 libhtml-template-perl all 2.97-1 [59,0 kB]
+Get:9 http://br.archive.ubuntu.com/ubuntu bionic-updates/main amd64 mysql-server all 5.7.30-0ubuntu0.18.04.1 [9.948 B]
+Fetched 19,1 MB in 2s (8.205 kB/s)       
+Preconfiguring packages ...
+Selecting previously unselected package mysql-common.
+(Reading database ... 242048 files and directories currently installed.)
+Preparing to unpack .../0-mysql-common_5.8+1.0.4_all.deb ...
+Unpacking mysql-common (5.8+1.0.4) ...
+Selecting previously unselected package libaio1:amd64.
+Preparing to unpack .../1-libaio1_0.3.110-5ubuntu0.1_amd64.deb ...
+Unpacking libaio1:amd64 (0.3.110-5ubuntu0.1) ...
+Selecting previously unselected package mysql-client-core-5.7.
+Preparing to unpack .../2-mysql-client-core-5.7_5.7.30-0ubuntu0.18.04.1_amd64.deb ...
+Unpacking mysql-client-core-5.7 (5.7.30-0ubuntu0.18.04.1) ...
+Selecting previously unselected package mysql-client-5.7.
+Preparing to unpack .../3-mysql-client-5.7_5.7.30-0ubuntu0.18.04.1_amd64.deb ...
+Unpacking mysql-client-5.7 (5.7.30-0ubuntu0.18.04.1) ...
+Selecting previously unselected package mysql-server-core-5.7.
+Preparing to unpack .../4-mysql-server-core-5.7_5.7.30-0ubuntu0.18.04.1_amd64.deb ...
+Unpacking mysql-server-core-5.7 (5.7.30-0ubuntu0.18.04.1) ...
+Selecting previously unselected package libevent-core-2.1-6:amd64.
+Preparing to unpack .../5-libevent-core-2.1-6_2.1.8-stable-4build1_amd64.deb ...
+Unpacking libevent-core-2.1-6:amd64 (2.1.8-stable-4build1) ...
+Setting up mysql-common (5.8+1.0.4) ...
+update-alternatives: using /etc/mysql/my.cnf.fallback to provide /etc/mysql/my.cnf (my.cnf) in auto mode
+Selecting previously unselected package mysql-server-5.7.
+(Reading database ... 242216 files and directories currently installed.)
+Preparing to unpack .../mysql-server-5.7_5.7.30-0ubuntu0.18.04.1_amd64.deb ...
+Unpacking mysql-server-5.7 (5.7.30-0ubuntu0.18.04.1) ...
+Selecting previously unselected package libhtml-template-perl.
+Preparing to unpack .../libhtml-template-perl_2.97-1_all.deb ...
+Unpacking libhtml-template-perl (2.97-1) ...
+Selecting previously unselected package mysql-server.
+Preparing to unpack .../mysql-server_5.7.30-0ubuntu0.18.04.1_all.deb ...
+Unpacking mysql-server (5.7.30-0ubuntu0.18.04.1) ...
+Setting up libevent-core-2.1-6:amd64 (2.1.8-stable-4build1) ...
+Setting up libhtml-template-perl (2.97-1) ...
+Setting up libaio1:amd64 (0.3.110-5ubuntu0.1) ...
+Setting up mysql-client-core-5.7 (5.7.30-0ubuntu0.18.04.1) ...
+Setting up mysql-server-core-5.7 (5.7.30-0ubuntu0.18.04.1) ...
+Setting up mysql-client-5.7 (5.7.30-0ubuntu0.18.04.1) ...
+Setting up mysql-server-5.7 (5.7.30-0ubuntu0.18.04.1) ...
+update-alternatives: using /etc/mysql/mysql.cnf to provide /etc/mysql/my.cnf (my.cnf) in auto mode
+Renaming removed key_buffer and myisam-recover options (if present)
+Created symlink /etc/systemd/system/multi-user.target.wants/mysql.service → /lib/systemd/system/mysql.service.
+Setting up mysql-server (5.7.30-0ubuntu0.18.04.1) ...
+Processing triggers for libc-bin (2.27-3ubuntu1) ...
+Processing triggers for systemd (237-3ubuntu10.39) ...
+Processing triggers for man-db (2.8.3-2ubuntu0.1) ...
+Processing triggers for ureadahead (0.100.0-21) ...
+ureadahead will be reprofiled on next reboot
+gcoen@Gu1:~/nd$ sudo mysql_secure_installation utility
+
+Securing the MySQL server deployment.
+
+Connecting to MySQL using a blank password.
+
+VALIDATE PASSWORD PLUGIN can be used to test passwords
+and improve security. It checks the strength of password
+and allows the users to set only those passwords which are
+secure enough. Would you like to setup VALIDATE PASSWORD plugin?
+
+Press y|Y for Yes, any other key for No: n
+Please set the password for root here.
+
+New password: 
+
+Re-enter new password: 
+By default, a MySQL installation has an anonymous user,
+allowing anyone to log into MySQL without having to have
+a user account created for them. This is intended only for
+testing, and to make the installation go a bit smoother.
+You should remove them before moving into a production
+environment.
+
+Remove anonymous users? (Press y|Y for Yes, any other key for No) : n
+
+ ... skipping.
+
+
+Normally, root should only be allowed to connect from
+'localhost'. This ensures that someone cannot guess at
+the root password from the network.
+
+Disallow root login remotely? (Press y|Y for Yes, any other key for No) : y
+Success.
+
+By default, MySQL comes with a database named 'test' that
+anyone can access. This is also intended only for testing,
+and should be removed before moving into a production
+environment.
+
+
+Remove test database and access to it? (Press y|Y for Yes, any other key for No) : n
+
+ ... skipping.
+Reloading the privilege tables will ensure that all changes
+made so far will take effect immediately.
+
+Reload privilege tables now? (Press y|Y for Yes, any other key for No) : y
+Success.
+
+All done! 
+gcoen@Gu1:~/nd$ mysql --version
+mysql  Ver 14.14 Distrib 5.7.30, for Linux (x86_64) using  EditLine wrapper
+gcoen@Gu1:~/nd$ ^C
+gcoen@Gu1:~/nd$ npm install -g typescript
+npm WARN checkPermissions Missing write access to /usr/lib/node_modules
+npm ERR! code EACCES
+npm ERR! syscall access
+npm ERR! path /usr/lib/node_modules
+npm ERR! errno -13
+npm ERR! Error: EACCES: permission denied, access '/usr/lib/node_modules'
+npm ERR!  { [Error: EACCES: permission denied, access '/usr/lib/node_modules']
+npm ERR!   stack:
+npm ERR!    'Error: EACCES: permission denied, access \'/usr/lib/node_modules\'',
+npm ERR!   errno: -13,
+npm ERR!   code: 'EACCES',
+npm ERR!   syscall: 'access',
+npm ERR!   path: '/usr/lib/node_modules' }
+npm ERR! 
+npm ERR! The operation was rejected by your operating system.
+npm ERR! It is likely you do not have the permissions to access this file as the current user
+npm ERR! 
+npm ERR! If you believe this might be a permissions issue, please double-check the
+npm ERR! permissions of the file and its containing directories, or try running
+npm ERR! the command again as root/Administrator.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /home/gcoen/.npm/_logs/2020-05-09T20_28_11_743Z-debug.log
+gcoen@Gu1:~/nd$ sudo npm install -g typescript
+[sudo] password for gcoen: 
+/usr/bin/tsc -> /usr/lib/node_modules/typescript/bin/tsc
+/usr/bin/tsserver -> /usr/lib/node_modules/typescript/bin/tsserver
++ typescript@3.8.3
+added 1 package from 1 contributor in 0.793s
+gcoen@Gu1:~/nd$ ls
+ MyFirst.js  'Regente - development.md'
+gcoen@Gu1:~/nd$ Node MyFirst.js
+
+Command 'Node' not found, did you mean:
+
+  command 'code' from snap code (d69a79b7)
+  command 'node' from deb nodejs
+  command 'ode' from deb plotutils
+
+See 'snap info <snapname>' for additional versions.
+
+gcoen@Gu1:~/nd$ node MyFirst.js
+^C
+gcoen@Gu1:~/nd$ ls
+ MyFirst.js   myfirstmodule.js  'Regente - development.md'
+gcoen@Gu1:~/nd$ node MyFirst.js
+/home/gcoen/nd/MyFirst.js:6
+  res.write("dia de hoje: " + dr/myDateTime());
+                              ^
+
+ReferenceError: dr is not defined
+    at Server.<anonymous> (/home/gcoen/nd/MyFirst.js:6:31)
+    at Server.emit (events.js:198:13)
+    at parserOnIncoming (_http_server.js:691:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:111:17)
+gcoen@Gu1:~/nd$ node MyFirst.js
+/home/gcoen/nd/MyFirst.js:6
+  res.write("dia de hoje: " + dt/myDateTime());
+                              ^
+
+ReferenceError: myDateTime is not defined
+    at Server.<anonymous> (/home/gcoen/nd/MyFirst.js:6:31)
+    at Server.emit (events.js:198:13)
+    at parserOnIncoming (_http_server.js:691:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:111:17)
+gcoen@Gu1:~/nd$ ls
+ MyFirst.js   myfirstmodule.js  'Regente - development.md'
+gcoen@Gu1:~/nd$ node MyFirst.js
+  

@@ -1,0 +1,65 @@
+Roteiro Git
+Diretoria rr cópia do diretorio de trabalho dt, só com os 2 programas e README.md
+---------------------------------------------------------------------------------
+
+Seguindo https://rogerdudler.github.io/git-guide/index.pt_BR.html
+*** preciso estudar git
+
+gcoen@Gu1:~$ cd rr
+
+gcoen@Gu1:~/rr$ ls
+ lerecom.py   lerjson.py  'Riscos - Recomendacoes.md'
+
+gcoen@Gu1:~/rr$ git init
+Reinitialized existing Git repository in /home/gcoen/rr/.git/
+
+gcoen@Gu1:~/rr$ ls
+ lerecom.py   lerjson.py  'Riscos - Recomendacoes.md'
+
+gcoen@Gu1:~/rr$ git init
+Initialized empty Git repository in /home/gcoen/rr/.git/
+
+gcoen@Gu1:~/rr$ git add *
+
+gcoen@Gu1:~/rr$ git commit -m "Inicio com 2 programas e um readme"
+[master (root-commit) b2b0cc6] Inicio com 2 programas e um readme
+ 3 files changed, 265 insertions(+)
+ create mode 100644 Riscos - Recomendacoes.md
+ create mode 100644 lerecom.py
+ create mode 100644 lerjson.py
+
+gcoen@Gu1:~/rr$ git status
+On branch master
+nothing to commit, working tree clean
+
+gcoen@Gu1:~/rr$ git remote add origin https://github.com/gcoen/Risks-and-Recommendations.git
+
+gcoen@Gu1:~/rr$ git push -u origin master
+Username for 'https://github.com': gcoen
+Password for 'https://gcoen@github.com': 
+Counting objects: 5, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 4.52 KiB | 4.52 MiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0)
+To https://github.com/gcoen/Risks-and-Recommendations.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+gcoen@Gu1:~/rr$ git pull
+Username for 'https://github.com': gcoen
+Password for 'https://gcoen@github.com': 
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (2/2), done.
+From https://github.com/gcoen/Risks-and-Recommendations
+   b2b0cc6..e08ddb0  master     -> origin/master
+Updating b2b0cc6..e08ddb0
+Fast-forward
+ README.md | 32 ++++++++++++++++++++++++++++++++
+ 1 file changed, 32 insertions(+)
+ create mode 100644 README.md
+gcoen@Gu1:~/rr$ 
+gcoen@Gu1:~/rr$ 

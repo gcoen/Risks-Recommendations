@@ -1,0 +1,32 @@
+Instalar Visual Studio Code
+---------------------------
+
+gcoen@Gu1:~$ cd Downloads
+gcoen@Gu1:~/Downloads$ ls
+'CACM apr 2020 - 3396208 - com virus.pdf'
+'VisualStudio code'
+ Win10_1809Oct_v2_EnglishInternational_x64.iso
+gcoen@Gu1:~/Downloads$ cd 'VisualStudio code'
+gcoen@Gu1:~/Downloads/VisualStudio code$ ls
+code_1.45.0-1588868285_amd64.deb
+gcoen@Gu1:~/Downloads/VisualStudio code$ sudo apt install ./code_1.45.0-1588868285_amd64.deb
+[sudo] password for gcoen: 
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+Note, selecting 'code' instead of './code_1.45.0-1588868285_amd64.deb'
+The following NEW packages will be installed:
+  code
+0 upgraded, 1 newly installed, 0 to remove and 8 not upgraded.
+Need to get 0 B/60,8 MB of archives.
+After this operation, 265 MB of additional disk space will be used.
+Get:1 /home/gcoen/Downloads/VisualStudio code/code_1.45.0-1588868285_amd64.deb code amd64 1.45.0-1588868285 [60,8 MB]
+Selecting previously unselected package code.
+(Reading database ... 242317 files and directories currently installed.)
+Preparing to unpack .../code_1.45.0-1588868285_amd64.deb ...
+Unpacking code (1.45.0-1588868285) ...
+Setting up code (1.45.0-1588868285) ...
+Processing triggers for mime-support (3.60ubuntu1) ...
+Processing triggers for desktop-file-utils (0.23-1ubuntu3.18.04.2) ...
+Processing triggers for gnome-menus (3.13.3-11ubuntu1.1) ...
+gcoen@Gu1:~/Downloads/VisualStudio code$ 
